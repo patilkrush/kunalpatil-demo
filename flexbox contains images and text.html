@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox with Images and Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .flex-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 300px;
+            flex: 1;
+        }
+        .flex-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .flex-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .flex-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <img src="https://via.placeholder.com/300" alt="Image 1">
+            <h3>Title 1</h3>
+            <p>This is a description for the first image. The text will wrap to fit the available space.</p>
+        </div>
+        <div class="flex-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+            <h3>Title 2</h3>
+            <p>This is a description for the second image. You can use any content here to describe the image.</p>
+        </div>
+        <div class="flex-item">
+            <img src="https://via.placeholder.com/300" alt="Image 3">
+            <h3>Title 3</h3>
+            <p>This is a description for the third image. Flexbox helps keep everything aligned properly.</p>
+        </div>
+    </div>
+
+</body>
+</html>
